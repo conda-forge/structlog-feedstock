@@ -1,5 +1,5 @@
-{% set version = "16.1.0" %}
-{% set sha256 = "46883e8a48918f18ab99c6413e166dc544acd1ad8bba659d152ac6e82c81c2ca" %}
+{% set version = "17.2.0" %}
+{% set sha256 = "ae5778b94a5167ac051fda0710902f04e6d9108fe095d69a4f63ce3a6705deec" %}
 
 package:
   name: structlog
@@ -11,6 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
+  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
@@ -36,3 +37,4 @@ about:
 extra:
   recipe-maintainers:
     - vamega
+    - aldanor
