@@ -32,6 +32,10 @@ about:
   home: http://www.structlog.org
   license: MIT/Apache 2.0
   summary: Structured Logging for Python
+  license_file:
+    - LICENSE
+    - LICENSE.apache2
+    - LICENSE.mit
 
 extra:
   recipe-maintainers:
