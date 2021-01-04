@@ -1,5 +1,5 @@
-{% set version = "20.1.0" %}
-{% set sha256 = "5e4f4e672cd8586cfbb96a6e62cb423f563dfa98f29364a4074e2520b2f6b394" %}
+{% set version = "20.2.0" %}
+{% set sha256 = "cca0471d84b05beb62894f5f51bd139134bd54077109cdbbfb0d95cee01d3c72" %}
 
 package:
   name: structlog
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
