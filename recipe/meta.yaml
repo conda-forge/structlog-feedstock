@@ -1,5 +1,5 @@
-{% set version = "20.2.0" %}
-{% set sha256 = "cca0471d84b05beb62894f5f51bd139134bd54077109cdbbfb0d95cee01d3c72" %}
+{% set version = "21.1.0" %}
+{% set sha256 = "dd70dfe65c2c1b0bcbb25ad21434672b48b9c1debc6714ff9c4457640127143e" %}
 
 package:
   name: structlog
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
 
   run:
-    - python
+    - python >=3.6
     - six
 
 test:
@@ -30,7 +30,7 @@ test:
 
 about:
   home: http://www.structlog.org
-  license: MIT/Apache 2.0
+  license: Apache-2.0 OR MIT
   summary: Structured Logging for Python
   license_file:
     - LICENSE
