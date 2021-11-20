@@ -1,5 +1,5 @@
-{% set version = "21.2.0" %}
-{% set sha256 = "23b3bf23bfd3f70b88b23698e43b826787dd25bd4b17cb61e15e643deb2a895e" %}
+{% set version = "21.3.0" %}
+{% set sha256 = "da0c89ab525f3d165ef4dc21724dfcd8c8618fe029aaeacfaf89efef6f16fc7b" %}
 
 package:
   name: structlog
