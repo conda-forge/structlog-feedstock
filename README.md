@@ -1,11 +1,11 @@
-About structlog
-===============
+About structlog-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/structlog-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.structlog.org
 
 Package license: Apache-2.0 OR MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/structlog-feedstock/blob/main/LICENSE.txt)
 
 Summary: Structured Logging for Python
 
