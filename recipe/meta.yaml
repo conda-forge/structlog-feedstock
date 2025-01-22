@@ -25,6 +25,8 @@ requirements:
 
   run:
     - python >={{ python_min }}
+    - typing-extensions
+  run_constrained:
     - typing-extensions  # [python <3.11]
 
 test:
