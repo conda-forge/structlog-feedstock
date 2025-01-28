@@ -1,14 +1,13 @@
+{% set name = "structlog" %}
 {% set version = "25.1.0" %}
-{% set sha256 = "0e7054a01bd48a0cffc54dd607b0b0db617f79f41f3a0794a836c6b862d59f49" %}
 
 package:
-  name: structlog
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: structlog-{{ version }}.tar.gz
-  url: https://github.com/hynek/structlog/archive/{{ version }}.zip
-  sha256: {{ sha256 }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/structlog-{{ version }}.tar.gz
+  sha256: 2ef2a572e0e27f09664965d31a576afe64e46ac6084ef5cec3c2b8cd6e4e3ad3
 
 build:
   noarch: python
@@ -21,19 +20,20 @@ requirements:
     - pip
     - hatchling
     - hatch-vcs
-    - hatch-fancy-pypi-readme
+    - hatch-fancy-pypi-readme >=22.8.0
 
   run:
     - python >={{ python_min }}
     - typing-extensions
-  run_constrained:
-    - typing-extensions  # [python <3.11]
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - structlog
+  commands:
+    - pip check
 
 about:
   home: http://www.structlog.org
@@ -42,8 +42,10 @@ about:
   license_file:
     - LICENSE-MIT
     - LICENSE-APACHE
+  dev_url: https://github.com/hynek/structlog
 
 extra:
   recipe-maintainers:
     - vamega
     - aldanor
+    - synapticarbors
