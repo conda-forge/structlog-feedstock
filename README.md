@@ -9,6 +9,8 @@ Package license: Apache-2.0 OR MIT
 
 Summary: Structured Logging for Python
 
+Development: https://github.com/hynek/structlog
+
 Current build status
 ====================
 
@@ -144,5 +146,6 @@ Feedstock Maintainers
 =====================
 
 * [@aldanor](https://github.com/aldanor/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 * [@vamega](https://github.com/vamega/)
 
