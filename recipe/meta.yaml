@@ -1,5 +1,5 @@
 {% set name = "structlog" %}
-{% set version = "25.4.0" %}
+{% set version = "25.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/structlog-{{ version }}.tar.gz
-  sha256: 186cd1b0a8ae762e29417095664adf1d6a31702160a46dacb7796ea82f7409e4
+  sha256: 098522a3bebed9153d4570c6d0288abf80a031dfdb2048d59a49e9dc2190fc98
 
 build:
   noarch: python
